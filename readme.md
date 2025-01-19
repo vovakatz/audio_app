@@ -24,6 +24,41 @@ A minimal but functional audio web application built with Next.js and Express. U
 - JWT for authentication
 - In-memory storage (easily replaceable with a database)
 
+## Project Structure
+
+```
+├── frontend/
+│   ├── components/
+│   │   ├── AudioPlayer.tsx
+│   ├── pages/
+│   │   │   ├── _app.tsx
+│   │   │   ├── index.tsx
+│   │   │   ├── login.tsx
+│   │   │   ├── main.tsx
+│   │   │   └── signup.tsx
+│   ├── services/
+│   │   └── api.ts
+│   ├── utils/
+│   │   └── token.ts
+│   └── package.json
+├── backend/
+│   ├── src/
+│   │   ├── routes/
+│   │   │   ├── auth.ts
+│   │   │   └── tracks.ts
+│   │   ├── middlewares/
+│   │   │   └── authMiddleware.ts
+│   │   ├── db/
+│   │   │   └── index.ts
+│   │   ├── models/
+│   │   │   ├── audioTrack.ts
+│   │   │   └── user.ts
+│   │   ├── app.ts
+│   │   └── server.ts
+│   └── package.json
+└── README.md
+```
+
 ## Getting Started
 
 ### Prerequisites
